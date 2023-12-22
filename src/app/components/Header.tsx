@@ -2,9 +2,6 @@ import Image from "next/image";
 import React from "react";
 import {MagnifyingGlassIcon, Bars3Icon, GlobeAltIcon, UserCircleIcon} from '@heroicons/react/16/solid';
 
-
-
-
 const Header = () => {
 
 	return (
