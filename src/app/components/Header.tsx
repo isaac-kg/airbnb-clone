@@ -29,7 +29,7 @@ const Header = () => {
 				<GlobeAltIcon className="h-6"/>
 
 				<div className="rounded-full border-2 py-0.5 px-1 flex gap-4">
-					<Bars3Icon  className="h-6"/>
+					<Bars3Icon  className="h-6"/> 
 					<UserCircleIcon className="h-6"/>
 
 				</div>
