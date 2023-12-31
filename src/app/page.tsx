@@ -3,6 +3,9 @@ import Header from './components/Header';
 import Banner from './components/Banner';
 import ExploreData from './intefaces/ExploreData.modal';
 import SmallCard from './components/ExploreCard';
+import ResidenceCard from './components/ResidenceCard';
+import LargeCard from './components/LargeCard';
+import Footer from './components/Footer';
 
 export default function Home() {
   const exploreData: ExploreData[]= [{
@@ -35,9 +38,7 @@ export default function Home() {
     distance: "4-hour drive",
   }]
 
-  const cardData = [
-
-  ]
+  const cardData = [...exploreData]
 
   return (
     <main>
@@ -45,7 +46,7 @@ export default function Home() {
       <Banner />
       <main className="max-w-7xl mx-auto px-8 sm:px-16">
         <section className="pt-6">
-          <h2 className="text-4xl font-semibold pb-5">Explore Nearby</h2>
+          <h2 className="text-4xl font-semibold pb-5">Explore</h2>
 
           {/**Pull data from the server
            * we have static rendering 
@@ -69,9 +70,22 @@ export default function Home() {
 
         <section>
           <h2 className="text-4xl font-semibold py-8"> Live Anywhere</h2>
+          <div className="flex gap-x-4 overflow-scroll overflow-y-hidden scrollbar-hide">
+            {
+              /*1:45* to hide scroll bar*/
+              cardData.map((data: any, index: number) => {
+                return <ResidenceCard 
+                  key={index} 
+                  locationName={data.location}
+                  img={data.img}
+                />
+              })
+            }
 
+          </div>
         </section>
-        
+        <LargeCard />
+        <Footer />
       </main>
     </main>
   )
