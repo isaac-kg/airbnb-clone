@@ -85,8 +85,8 @@ export default function Home() {
           </div>
         </section>
         <LargeCard />
-        <Footer />
       </main>
+      <Footer />
     </main>
   )
 }
