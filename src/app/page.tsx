@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import Header from './components/Header';
 import Banner from './components/Banner';
 import ExploreData from './intefaces/ExploreData.modal';
@@ -41,7 +40,7 @@ export default function Home() {
   const cardData = [...exploreData]
 
   return (
-    <main>
+    <div>
       <Header />
       <Banner />
       <main className="max-w-7xl mx-auto px-8 sm:px-16">
@@ -87,7 +86,7 @@ export default function Home() {
         <LargeCard />
       </main>
       <Footer />
-    </main>
+    </div>
   )
 }
 
