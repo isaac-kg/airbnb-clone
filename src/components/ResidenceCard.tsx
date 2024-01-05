@@ -1,7 +1,12 @@
 import React, { FunctionComponent } from "react"
 
-const ResidenceCard: FunctionComponent = (props: any) => {
-  const { locationName, img } = props
+
+interface CardProps {
+  locationName: string;
+  img: string
+}
+
+const ResidenceCard: FunctionComponent<CardProps> = ({locationName, img}) => {
 
   return (
     <div className="cursor-pointer hover:scale-105 transform transition duration-300">
