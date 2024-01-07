@@ -3,11 +3,12 @@ import React, { FunctionComponent } from "react"
 const LargeCard: FunctionComponent = (props: any) => {
   const { locationName, img } = props
 
+  // https://links.papareact.com/4cj
   return (
     <div className="relative mt-16">
       <div className="relative h-96 min-w-[300px]">
         <img
-          src={`/chole.jpg`}
+          src={'https://links.papareact.com/4cj'}
           alt={``}
           className="rounded-lg object-cover h-96 w-full"
         />
