@@ -1,7 +1,11 @@
 import React, { FunctionComponent } from "react"
 
-const LargeCard: FunctionComponent = (props: any) => {
-  const { locationName, img } = props
+
+interface LargeCardProp{
+  locationName: string;
+  img: string;
+}
+const LargeCard: FunctionComponent<LargeCardProp> = ({locationName, img}) => {
 
   // https://links.papareact.com/4cj
   return (
