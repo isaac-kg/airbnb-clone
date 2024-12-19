@@ -5,7 +5,7 @@
 ### Installation 
 ##### clone the repository:
 ```
-git clone (https://github.com/isaac-kg/airbnb-clone.git)
+git clone https://github.com/isaac-kg/airbnb-clone.git
 ```
 ```
 cd airbnb-clone
